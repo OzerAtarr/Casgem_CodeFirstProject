@@ -54,5 +54,17 @@ namespace Casgem_CodeFirstProject.Controllers
             travelContext.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        public ActionResult Destinations()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Destinations(Destination destination)
+        {
+            travelContext.Destinations.Add(destination);
+            travelContext.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }

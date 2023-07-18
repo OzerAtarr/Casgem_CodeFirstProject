@@ -20,6 +20,10 @@ namespace Casgem_CodeFirstProject.Controllers
         }
         public PartialViewResult PartialNavbar()
         {
+            ViewBag.adress = travelContext.ContactUs.Select(x => x.Address).FirstOrDefault();
+            ViewBag.phone = travelContext.ContactUs.Select(x => x.Phone).FirstOrDefault();
+            ViewBag.email = travelContext.ContactUs.Select(x => x.Email).FirstOrDefault();
+            ViewBag.icon = travelContext.ContactUs.Select(x => x.Icon).FirstOrDefault();
             return PartialView();
         }     
         public PartialViewResult PartialSliderScript()
@@ -53,7 +57,35 @@ namespace Casgem_CodeFirstProject.Controllers
         }
         public PartialViewResult PartialFooter()
         {
+            ViewBag.adress = travelContext.ContactUs.Select(x => x.Address).FirstOrDefault();
+            ViewBag.phone = travelContext.ContactUs.Select(x => x.Phone).FirstOrDefault();
+            ViewBag.email = travelContext.ContactUs.Select(x => x.Email).FirstOrDefault();
+            ViewBag.icon = travelContext.ContactUs.Select(x => x.Icon).FirstOrDefault();
+            ViewBag.categoryName = travelContext.Categories.Select(x => x.CategoryName).ToList();
             return PartialView();
+        }
+
+        public PartialViewResult PartialSocialMedia()
+        {
+            var values = travelContext.FooterSocialMedias.ToList();
+            return PartialView(values);
+        }
+        public PartialViewResult PartialCategory()
+        {
+            var values = travelContext.Categories.ToList();
+            return PartialView(values);
+        }
+
+        public PartialViewResult PartialGalery()
+        {
+            var values = travelContext.Galeries.ToList();
+            return PartialView(values);
+        }
+
+        public PartialViewResult PartialTravelTrip()
+        {
+            var values = travelContext.TravelTrips.ToList();
+            return PartialView(values);
         }
 
         public PartialViewResult PartialMainScript()

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -7,6 +8,7 @@ namespace Casgem_CodeFirstProject.DAL.Entities
 {
     public class Booking
     {
+
         public int BookingID { get; set; }
         public string CustomerName { get; set; }
         public string Destination { get; set; }

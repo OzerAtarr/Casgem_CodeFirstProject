@@ -1,0 +1,39 @@
+﻿@model Casgem_CodeFirstProject.DAL.Entities.Destination
+
+@{
+    ViewBag.Title = "Destinations";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2>Destinations</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="destinationName">Rehber Ad Soyad</label>
+        @Html.TextBoxFor(x => x.DestinationName, new { @class = "form-control", id = "destinationName" })
+    </div>
+    <div class="form-group">
+        <label for="dayNight">Gece/Gün</label>
+        @Html.TextBoxFor(x => x.DayNight, new { @class = "form-control", id = "dayNight" })
+    </div>
+    <div class="form-group">
+        <label for="description">Açıklama</label>
+        @Html.TextBoxFor(x => x.Description, new { @class = "form-control", id = "description" })
+    </div>
+    <div class="form-group">
+        <label for="price">Fiyat</label>
+        @Html.TextBoxFor(x => x.Price, new { @class = "form-control", id = "price" })
+    </div>
+    <div class="form-group">
+        <label for="imageUrl">Resim URL</label>
+        @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control", id = "imageUrl" })
+    </div>
+    <div class="form-group">
+        <div class="custom-checkbox">
+            @Html.CheckBoxFor(x => x.Status, new { id = "myCheckbox" })
+            <span class="checkmark-box"></span>
+            <label for="myCheckbox" class="checkmark-label">Uygun Mu?</label>
+        </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Kaydet</button>
+</form>

@@ -6,11 +6,10 @@ using System.Web;
 
 namespace Casgem_CodeFirstProject.DAL.Entities
 {
-    public class Admin
+    public class TravelTrip
     {
-  
-        public int AdminID { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
+        [Key]
+        public int TravelTripID { get; set; }
+        public string TravelTripName { get; set; }
     }
 }

@@ -152,22 +152,36 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\AdminGuideController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Controllers\SocialMediaController.cs" />
     <Compile Include="DAL\Context\TravelContext.cs" />
+    <Compile Include="DAL\Entities\About.cs" />
     <Compile Include="DAL\Entities\Admin.cs" />
     <Compile Include="DAL\Entities\Booking.cs" />
+    <Compile Include="DAL\Entities\Category.cs" />
     <Compile Include="DAL\Entities\Contact.cs" />
+    <Compile Include="DAL\Entities\ContactUs.cs" />
     <Compile Include="DAL\Entities\Destination.cs" />
+    <Compile Include="DAL\Entities\FooterSocialMedia.cs" />
+    <Compile Include="DAL\Entities\Galery.cs" />
     <Compile Include="DAL\Entities\Guide.cs" />
+    <Compile Include="DAL\Entities\Service.cs" />
     <Compile Include="DAL\Entities\SocialMedia.cs" />
+    <Compile Include="DAL\Entities\TravelTrip.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202307161945071_mig_footer_all.cs" />
+    <Compile Include="Migrations\202307161945071_mig_footer_all.designer.cs">
+      <DependentUpon>202307161945071_mig_footer_all.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -395,6 +409,18 @@
     <Content Include="Views\ErrorPage\Page404.cshtml" />
     <Content Include="Views\SocialMedia\Index.cshtml" />
     <Content Include="Views\SocialMedia\AddSocialMedia.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\AdminGuide\Destinations.cshtml" />
+    <Content Include="Views\About\PartialGuide.cshtml" />
+    <Content Include="Views\Default\PartialCategory.cshtml" />
+    <Content Include="Views\Default\PartialGalery.cshtml" />
+    <Content Include="Views\Default\PartialTravelTrip.cshtml" />
+    <Content Include="Views\Default\PartialSocialMedia.cshtml" />
+    <Content Include="Views\About\PartialAbout.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Contact\PartialContactUs.cshtml" />
+    <Content Include="Views\Services\Index.cshtml" />
+    <Content Include="Views\Services\PartialServices.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -412,6 +438,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202307161945071_mig_footer_all.resx">
+      <DependentUpon>202307161945071_mig_footer_all.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

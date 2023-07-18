@@ -1,0 +1,35 @@
+﻿﻿@model List<Casgem_CodeFirstProject.DAL.Entities.Guide>
+<section class="w3l-team-main-6" id="team">
+    <!-- /team-grids -->
+    <div class="team-content-page editContent ">
+
+        <div class="container">
+            <div class="row text-center">
+                @foreach (var item in Model)
+                {
+                    <div class="col-lg-3 col-md-6 col-sm-6 column">
+                        <a href="#"><img class="img img-responsive" src="@item.GuideImageUrl" alt=""></a>
+                        <h4><a href="#">@item.GuideName</a></h4>
+                        <div class="w3l-team-7_bottom">
+                            <div class="w3l-team-7_bottom-left">
+                                <h6>@item.GuideTitle</h6>
+                            </div>
+                            <ul class="social_7 mt-3">
+                                @foreach (var item2 in item.SocialMedia)
+                                {
+                                    <li><a href="@item2.SocialMediaUrl"><span class="@item2.SocialMediaIcon"></span></a></li>
+                                }
+
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                }
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- /team-grids -->
+</section>

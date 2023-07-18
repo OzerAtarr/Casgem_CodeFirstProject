@@ -6,11 +6,10 @@ using System.Web;
 
 namespace Casgem_CodeFirstProject.DAL.Entities
 {
-    public class Admin
+    public class Category
     {
-  
-        public int AdminID { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
+        [Key]
+        public int CategoryID { get; set; }
+        public string CategoryName { get; set; }
     }
 }

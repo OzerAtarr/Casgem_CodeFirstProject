@@ -13,7 +13,14 @@ namespace Casgem_CodeFirstProject.DAL.Context
         public DbSet<Guide> Guides { get; set; }
         public DbSet<SocialMedia> SocialMedias { get; set; }
         public DbSet<Contact> Contacts { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Galery> Galeries { get; set; }
+        public DbSet<About> Abouts { get; set; }
+        public DbSet<TravelTrip> TravelTrips { get; set; }
+        public DbSet<FooterSocialMedia> FooterSocialMedias { get; set; }
+        public DbSet<ContactUs> ContactUs { get; set; }
         public DbSet<Destination> Destinations { get; set; }
+        public DbSet<Service> Services { get; set; }
         public DbSet<Admin> Admins { get; set; }
     }
 }

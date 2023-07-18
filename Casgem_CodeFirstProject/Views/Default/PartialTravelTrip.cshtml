@@ -1,0 +1,11 @@
+﻿@model List<Casgem_CodeFirstProject.DAL.Entities.TravelTrip>
+
+<div class="footer-list-29 footer-4">
+    <ul>
+        <h6 class="footer-title-29">Travel & Trip</h6>
+        @foreach(var item in Model)
+            {
+                <li><a href="#url">@item.TravelTripName</a></li>
+            }
+    </ul>
+</div>
