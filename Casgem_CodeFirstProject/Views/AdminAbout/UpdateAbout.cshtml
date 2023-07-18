@@ -1,0 +1,41 @@
+﻿@model  Casgem_CodeFirstProject.DAL.Entities.About
+@{
+    ViewBag.Title = "UpdateAbout";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2>About Güncelleme Sayfası</h2>
+
+<form method="post"
+    @Html.HiddenFor(x => x.AboutID)
+    <textarea></textarea>
+    <label>Başlık1</label>
+    @Html.TextBoxFor(x => x.Title1, new { @class = "form-control" })
+    <br />
+    <label>Açıklama1</label>
+    @Html.TextBoxFor(x => x.Description1, new { @class = "form-control" })
+    <br />
+    <label>About Fotoğraf Url1</label>
+    @Html.TextBoxFor(x => x.ImageUrl1, new { @class = "form-control" })
+    <br />
+    <label>Başlık2</label>
+    @Html.TextBoxFor(x => x.Title2, new { @class = "form-control" })
+    <br />
+    <label>Açıklama2</label>
+    @Html.TextBoxFor(x => x.Description2, new { @class = "form-control" })
+    <br />
+    <label>About Fotoğraf Url2</label>
+    @Html.TextBoxFor(x => x.ImageUrl2, new { @class = "form-control" })
+    <br />
+    <label>Başlık3</label>
+    @Html.TextBoxFor(x => x.Title3, new { @class = "form-control" })
+    <br />
+    <label>Açıklama3</label>
+    @Html.TextBoxFor(x => x.Description3, new { @class = "form-control" })
+    <br />
+    <label>About Fotoğraf Url3</label>
+    @Html.TextBoxFor(x => x.ImageUrl3, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+</form>
+

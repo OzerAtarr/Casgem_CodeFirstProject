@@ -3,10 +3,27 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class mig_footer_all : DbMigration
+    public partial class mig_first : DbMigration
     {
         public override void Up()
         {
+            CreateTable(
+                "dbo.Abouts",
+                c => new
+                    {
+                        AboutID = c.Int(nullable: false, identity: true),
+                        Title1 = c.String(),
+                        Title2 = c.String(),
+                        Title3 = c.String(),
+                        Description1 = c.String(),
+                        Description2 = c.String(),
+                        Description3 = c.String(),
+                        ImageUrl1 = c.String(),
+                        ImageUrl2 = c.String(),
+                        ImageUrl3 = c.String(),
+                    })
+                .PrimaryKey(t => t.AboutID);
+            
             CreateTable(
                 "dbo.Admins",
                 c => new
@@ -92,15 +109,15 @@
                 .PrimaryKey(t => t.FooterSocialMediaID);
             
             CreateTable(
-                "dbo.Galeries",
+                "dbo.Galleries",
                 c => new
                     {
-                        GaleryID = c.Int(nullable: false, identity: true),
+                        GalleryID = c.Int(nullable: false, identity: true),
                         Title = c.String(),
                         Description = c.String(),
                         ImageUrl = c.String(),
                     })
-                .PrimaryKey(t => t.GaleryID);
+                .PrimaryKey(t => t.GalleryID);
             
             CreateTable(
                 "dbo.Guides",
@@ -128,6 +145,28 @@
                 .Index(t => t.GuideID);
             
             CreateTable(
+                "dbo.Services",
+                c => new
+                    {
+                        ServicesID = c.Int(nullable: false, identity: true),
+                        Title = c.String(),
+                        Description = c.String(),
+                        Icon = c.String(),
+                    })
+                .PrimaryKey(t => t.ServicesID);
+            
+            CreateTable(
+                "dbo.Tours",
+                c => new
+                    {
+                        TourID = c.Int(nullable: false, identity: true),
+                        Title = c.String(),
+                        AvaliableTour = c.Int(nullable: false),
+                        ImageUrl = c.String(),
+                    })
+                .PrimaryKey(t => t.TourID);
+            
+            CreateTable(
                 "dbo.TravelTrips",
                 c => new
                     {
@@ -143,9 +182,11 @@
             DropForeignKey("dbo.SocialMedias", "GuideID", "dbo.Guides");
             DropIndex("dbo.SocialMedias", new[] { "GuideID" });
             DropTable("dbo.TravelTrips");
+            DropTable("dbo.Tours");
+            DropTable("dbo.Services");
             DropTable("dbo.SocialMedias");
             DropTable("dbo.Guides");
-            DropTable("dbo.Galeries");
+            DropTable("dbo.Galleries");
             DropTable("dbo.FooterSocialMedias");
             DropTable("dbo.Destinations");
             DropTable("dbo.ContactUs");
@@ -153,6 +194,7 @@
             DropTable("dbo.Categories");
             DropTable("dbo.Bookings");
             DropTable("dbo.Admins");
+            DropTable("dbo.Abouts");
         }
     }
 }

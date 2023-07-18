@@ -7,13 +7,13 @@ namespace Casgem_CodeFirstProject.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class mig_footer_all : IMigrationMetadata
+    public sealed partial class mig_first : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(mig_footer_all));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(mig_first));
         
         string IMigrationMetadata.Id
         {
-            get { return "202307161945071_mig_footer_all"; }
+            get { return "202307181820513_mig_first"; }
         }
         
         string IMigrationMetadata.Source

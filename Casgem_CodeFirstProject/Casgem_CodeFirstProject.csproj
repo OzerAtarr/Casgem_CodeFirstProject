@@ -153,7 +153,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\AdminAboutController.cs" />
+    <Compile Include="Controllers\AdminContactController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AdminGalleryController.cs" />
     <Compile Include="Controllers\AdminGuideController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
@@ -171,17 +174,18 @@
     <Compile Include="DAL\Entities\ContactUs.cs" />
     <Compile Include="DAL\Entities\Destination.cs" />
     <Compile Include="DAL\Entities\FooterSocialMedia.cs" />
-    <Compile Include="DAL\Entities\Galery.cs" />
+    <Compile Include="DAL\Entities\Gallery.cs" />
     <Compile Include="DAL\Entities\Guide.cs" />
     <Compile Include="DAL\Entities\Service.cs" />
     <Compile Include="DAL\Entities\SocialMedia.cs" />
+    <Compile Include="DAL\Entities\Tour.cs" />
     <Compile Include="DAL\Entities\TravelTrip.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202307161945071_mig_footer_all.cs" />
-    <Compile Include="Migrations\202307161945071_mig_footer_all.designer.cs">
-      <DependentUpon>202307161945071_mig_footer_all.cs</DependentUpon>
+    <Compile Include="Migrations\202307181820513_mig_first.cs" />
+    <Compile Include="Migrations\202307181820513_mig_first.designer.cs">
+      <DependentUpon>202307181820513_mig_first.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -421,6 +425,13 @@
     <Content Include="Views\Contact\PartialContactUs.cshtml" />
     <Content Include="Views\Services\Index.cshtml" />
     <Content Include="Views\Services\PartialServices.cshtml" />
+    <Content Include="Views\Services\PartialAvaliableTour.cshtml" />
+    <Content Include="Views\AdminContact\Index.cshtml" />
+    <Content Include="Views\AdminGallery\Index.cshtml" />
+    <Content Include="Views\AdminGallery\AddGallery.cshtml" />
+    <Content Include="Views\AdminGallery\UpdateGallery.cshtml" />
+    <Content Include="Views\AdminAbout\Index.cshtml" />
+    <Content Include="Views\AdminAbout\UpdateAbout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -440,8 +451,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202307161945071_mig_footer_all.resx">
-      <DependentUpon>202307161945071_mig_footer_all.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202307181820513_mig_first.resx">
+      <DependentUpon>202307181820513_mig_first.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

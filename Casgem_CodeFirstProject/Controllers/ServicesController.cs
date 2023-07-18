@@ -20,5 +20,11 @@ namespace Casgem_CodeFirstProject.Controllers
             var values = travelContext.Services.ToList();
             return PartialView(values);
         }
+
+        public PartialViewResult PartialAvaliableTour()
+        {
+            var values = travelContext.Tours.ToList();
+            return PartialView(values);
+        }
     }
 }

@@ -78,7 +78,7 @@ namespace Casgem_CodeFirstProject.Controllers
 
         public PartialViewResult PartialGalery()
         {
-            var values = travelContext.Galeries.ToList();
+            var values = travelContext.Galleries.ToList();
             return PartialView(values);
         }
 
