@@ -1,0 +1,21 @@
+﻿@model  Casgem_CodeFirstProject.DAL.Entities.Service 
+@{
+    ViewBag.Title = "AddAdminService";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+
+<h2>Hizmet Ekleme Sayfası</h2>
+<form method="post">
+    <label>Başlık</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    <label>Açıklama</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br />
+    <label>Icon</label>
+    @Html.TextBoxFor(x => x.Icon, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Ekle</button>
+</form>
+

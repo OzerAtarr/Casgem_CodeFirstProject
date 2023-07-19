@@ -154,10 +154,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminAboutController.cs" />
+    <Compile Include="Controllers\AdminBookingController.cs" />
     <Compile Include="Controllers\AdminContactController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\AdminGalleryController.cs" />
     <Compile Include="Controllers\AdminGuideController.cs" />
+    <Compile Include="Controllers\AdminServicesController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
@@ -167,6 +169,7 @@
     <Compile Include="Controllers\SocialMediaController.cs" />
     <Compile Include="DAL\Context\TravelContext.cs" />
     <Compile Include="DAL\Entities\About.cs" />
+    <Compile Include="DAL\Entities\AboutMe.cs" />
     <Compile Include="DAL\Entities\Admin.cs" />
     <Compile Include="DAL\Entities\Booking.cs" />
     <Compile Include="DAL\Entities\Category.cs" />
@@ -432,10 +435,14 @@
     <Content Include="Views\AdminGallery\UpdateGallery.cshtml" />
     <Content Include="Views\AdminAbout\Index.cshtml" />
     <Content Include="Views\AdminAbout\UpdateAbout.cshtml" />
+    <Content Include="Views\AdminServices\Index.cshtml" />
+    <Content Include="Views\AdminServices\AddAdminService.cshtml" />
+    <Content Include="Views\AdminBooking\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\AdminAboutMe\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
