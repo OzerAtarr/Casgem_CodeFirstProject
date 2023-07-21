@@ -1,4 +1,5 @@
 ﻿using Casgem_CodeFirstProject.DAL.Context;
+using Casgem_CodeFirstProject.DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,11 +11,20 @@ namespace Casgem_CodeFirstProject.Controllers
     public class ContactController : Controller
     {
         TravelContext travelContext = new TravelContext();
+
+        [HttpGet]
         public ActionResult Index()
         {
             return View();
         }
 
+        [HttpPost]
+        public ActionResult Index(Contact contact)
+        {
+            travelContext.Contacts.Add(contact);
+            travelContext.SaveChanges();
+            return RedirectToAction("Index", "Contact");
+        }
         public PartialViewResult PartialContactUs()
         {
             ViewBag.adress = travelContext.ContactUs.Select(x => x.Address).FirstOrDefault();

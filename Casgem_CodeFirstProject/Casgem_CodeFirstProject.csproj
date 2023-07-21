@@ -156,6 +156,7 @@
     <Compile Include="Controllers\AdminAboutController.cs" />
     <Compile Include="Controllers\AdminBookingController.cs" />
     <Compile Include="Controllers\AdminContactController.cs" />
+    <Compile Include="Controllers\AdminContactUsController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\AdminGalleryController.cs" />
     <Compile Include="Controllers\AdminGuideController.cs" />
@@ -186,9 +187,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202307181820513_mig_first.cs" />
-    <Compile Include="Migrations\202307181820513_mig_first.designer.cs">
-      <DependentUpon>202307181820513_mig_first.cs</DependentUpon>
+    <Compile Include="Migrations\202307211216196_mig_contactus.cs" />
+    <Compile Include="Migrations\202307211216196_mig_contactus.designer.cs">
+      <DependentUpon>202307211216196_mig_contactus.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -438,6 +439,8 @@
     <Content Include="Views\AdminServices\Index.cshtml" />
     <Content Include="Views\AdminServices\AddAdminService.cshtml" />
     <Content Include="Views\AdminBooking\Index.cshtml" />
+    <Content Include="Views\AdminContactUs\Index.cshtml" />
+    <Content Include="Views\AdminContactUs\UpdateContactUs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -458,8 +461,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202307181820513_mig_first.resx">
-      <DependentUpon>202307181820513_mig_first.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202307211216196_mig_contactus.resx">
+      <DependentUpon>202307211216196_mig_contactus.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

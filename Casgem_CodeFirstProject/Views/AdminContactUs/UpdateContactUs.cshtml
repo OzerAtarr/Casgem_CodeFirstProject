@@ -1,0 +1,23 @@
+﻿@model Casgem_CodeFirstProject.DAL.Entities.ContactUs
+@{
+    ViewBag.Title = "UpdateContactUs";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+
+<form method="post"
+      @Html.HiddenFor(x => x.ID)
+    <label>Adres</label>
+    @Html.TextBoxFor(x => x.Address, new { @class = "form-control" })
+    <br />
+    <label>Mail</label>
+    @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+    <br />
+    <label>Telefon</label>
+    @Html.TextBoxFor(x => x.Phone, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+</form>
+
+
+

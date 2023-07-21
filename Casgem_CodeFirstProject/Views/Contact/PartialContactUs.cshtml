@@ -1,60 +1,38 @@
-﻿<section class="w3l-contact-info-main" id="contact">
-    <div class="contact-sec	editContent">
-        <div class="container">
-            <div class="map-content-9 mb-5 ">
-                <form action="//sendmail.w3layouts.com/submitForm" method="post">
-                    <div class="twice-two">
-                        <input type="text" class="form-control" name="w3lName" id="w3lName" placeholder="Name" required="">
-                        <input type="email" class="form-control" name="w3lSender" id="w3lSender" placeholder="Email" required="">
-                        <input type="text" class="form-control" name="w3lSubject" id="w3lSubject" placeholder="Subject" required="">
-                    </div>
-                    <textarea name="w3lMessage" class="form-control" id="w3lMessage" placeholder="Message" required=""></textarea>
+﻿<div class="d-grid contact-view">
 
-                    <div class="text-right">
-                        <button type="submit" class="btn btn-contact">Mesaj Gönder</button>
-                    </div>
-                </form>
+    <div class="cont-details">
+        <h3 class="sub-title">Hızlı İletişim</h3>
+        <p class="para mt-3 mb-4">Consectetur adipisicing elit.Lorem ipsum dolor sit amet Dignissimos commodi laborum.</p>
+        <div class="cont-top">
+            <div class="cont-left text-center">
+                <span class="fa fa-phone text-secondary"></span>
             </div>
-
-            <div class="d-grid contact-view">
-
-                <div class="cont-details">
-                    <h3 class="sub-title">Hızlı İletişim</h3>
-                    <p class="para mt-3 mb-4">Consectetur adipisicing elit.Lorem ipsum dolor sit amet Dignissimos commodi laborum.</p>
-                    <div class="cont-top">
-                        <div class="cont-left text-center">
-                            <span class="fa fa-phone text-secondary"></span>
-                        </div>
-                        <div class="cont-right">
-                            <p class="para"><a href="tel:+@ViewBag.phone">+@ViewBag.phone</a></p>
-                        </div>
-                    </div>
-                    <div class="cont-top margin-up">
-                        <div class="cont-left text-center">
-                            <span class="fa fa-envelope-o text-secondary"></span>
-                        </div>
-                        <div class="cont-right">
-                            <p class="para"><a href="mailto:@ViewBag.email" class="mail">@ViewBag.email</a></p>
-                        </div>
-                    </div>
-                    <div class="cont-top margin-up">
-                        <div class="cont-left text-center">
-                            <span class="fa fa-map-marker text-secondary"></span>
-                        </div>
-                        <div class="cont-right">
-                            <p class="para">
-                                @ViewBag.adress
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="map-iframe ">
-                    
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.0249540557493!2d32.89628156514733!3d40.0302222863881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40820811e6e10549%3A0x9c12652c44346d8a!2zw4dhbMSxxZ9tYSB2ZSBTb3N5YWwgR8O8dmVubGlrIEXEn2l0aW0gVmUgQXJhxZ90xLFybWEgTWVya2V6aQ!5e0!3m2!1str!2str!4v1689623427962!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+            <div class="cont-right">
+                <p class="para"><a href="tel:+@ViewBag.phone">+@ViewBag.phone</a></p>
             </div>
-
+        </div>
+        <div class="cont-top margin-up">
+            <div class="cont-left text-center">
+                <span class="fa fa-envelope-o text-secondary"></span>
+            </div>
+            <div class="cont-right">
+                <p class="para"><a href="mailto:@ViewBag.email" class="mail">@ViewBag.email</a></p>
+            </div>
+        </div>
+        <div class="cont-top margin-up">
+            <div class="cont-left text-center">
+                <span class="fa fa-map-marker text-secondary"></span>
+            </div>
+            <div class="cont-right">
+                <p class="para">
+                    @ViewBag.adress
+                </p>
+            </div>
         </div>
     </div>
-</section>
+
+    <div class="map-iframe ">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.0249540557493!2d32.89628156514733!3d40.0302222863881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40820811e6e10549%3A0x9c12652c44346d8a!2zw4dhbMSxxZ9tYSB2ZSBTb3N5YWwgR8O8dmVubGlrIEXEn2l0aW0gVmUgQXJhxZ90xLFybWEgTWVya2V6aQ!5e0!3m2!1str!2str!4v1689623427962!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>

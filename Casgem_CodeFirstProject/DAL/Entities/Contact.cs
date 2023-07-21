@@ -14,6 +14,6 @@ namespace Casgem_CodeFirstProject.DAL.Entities
         public string Mail { get; set; }
         public string Subject { get; set; }
         public string Message { get; set; }
-        public DateTime MessageDate { get; set; }
+        public DateTime MessageDate { get; set; } = DateTime.Now;
     }
 }

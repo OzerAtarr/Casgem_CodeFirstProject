@@ -1,0 +1,25 @@
+﻿@model List<Casgem_CodeFirstProject.DAL.Entities.ContactUs>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2>Bize Ulaşın</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Adres</th>
+        <th>Telefon</th>
+        <th>Mail</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Address</td>
+            <td>@item.Phone</td>
+            <td>@item.Email</td>
+        <tr><td><a href="/AdminContactUs/UpdateContactUs/@item.ID" class="btn btn-outline-success">Güncelle</a></td></tr>
+        </tr>
+    }
+</table>

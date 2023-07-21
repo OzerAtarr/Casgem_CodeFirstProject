@@ -1,4 +1,5 @@
 ﻿using Casgem_CodeFirstProject.DAL.Context;
+using Casgem_CodeFirstProject.DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

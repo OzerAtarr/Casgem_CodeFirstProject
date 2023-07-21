@@ -33,7 +33,33 @@
         </div>
     </section>
     <!-- breadcrumbs //-->
-    @Html.Action("PartialContactUs")
+
+    <section class="w3l-contact-info-main" id="contact">
+        <div class="contact-sec	editContent">
+            <div class="container">
+                <div class="map-content-9 mb-5 ">
+                    <form method="post">
+                        <div class="twice-two">
+                            <input type="text" class="form-control" name="NameSurname" id="w3lName" placeholder="Ad Soyad" required="">
+                            <input type="email" class="form-control" name="Mail" id="w3lSender" placeholder="Mail Adresiniz" required="">
+                            <input type="text" class="form-control" name="Subject" id="w3lSubject" placeholder="Konu" required="">
+                        </div>
+                        <textarea name="Message" class="form-control" id="w3lMessage" placeholder="Mesaj" required=""></textarea>
+
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-contact">Mesaj Gönder</button>
+                        </div>
+                    </form>
+                </div>
+
+                @Html.Action("PartialContactUs")
+
+            </div>
+        </div>
+    </section>
+
+
+    
     <section class="w3l-footer-29-main">
         <div class="footer-29 py-5 ">
             <div class="container">
