@@ -181,6 +181,7 @@
     <Compile Include="DAL\Entities\Gallery.cs" />
     <Compile Include="DAL\Entities\Guide.cs" />
     <Compile Include="DAL\Entities\Service.cs" />
+    <Compile Include="DAL\Entities\Slider.cs" />
     <Compile Include="DAL\Entities\SocialMedia.cs" />
     <Compile Include="DAL\Entities\Tour.cs" />
     <Compile Include="DAL\Entities\TravelTrip.cs" />
@@ -190,6 +191,10 @@
     <Compile Include="Migrations\202307211216196_mig_contactus.cs" />
     <Compile Include="Migrations\202307211216196_mig_contactus.designer.cs">
       <DependentUpon>202307211216196_mig_contactus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202307240647441_mig_slider.cs" />
+    <Compile Include="Migrations\202307240647441_mig_slider.designer.cs">
+      <DependentUpon>202307240647441_mig_slider.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -463,6 +468,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202307211216196_mig_contactus.resx">
       <DependentUpon>202307211216196_mig_contactus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307240647441_mig_slider.resx">
+      <DependentUpon>202307240647441_mig_slider.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

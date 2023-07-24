@@ -28,11 +28,13 @@ namespace Casgem_CodeFirstProject.Controllers
         }     
         public PartialViewResult PartialSliderScript()
         {
+
             return PartialView();
         }
         public PartialViewResult PartialSlider()
         {
-            return PartialView();
+            var values = travelContext.Sliders.ToList();
+            return PartialView(values);
         }
         public PartialViewResult PartialBooking()
         {

@@ -16,6 +16,7 @@ namespace Casgem_CodeFirstProject.DAL.Context
         public DbSet<Category> Categories { get; set; }
         public DbSet<Gallery> Galleries { get; set; }
         public DbSet<About> Abouts { get; set; }
+        public DbSet<Slider> Sliders { get; set; }
         public DbSet<TravelTrip> TravelTrips { get; set; }
         public DbSet<FooterSocialMedia> FooterSocialMedias { get; set; }
         public DbSet<ContactUs> ContactUs { get; set; }
